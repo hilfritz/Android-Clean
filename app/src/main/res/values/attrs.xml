@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="range_edit_text_style">
+        <attr name="inputType" format="enum"  >
+            <enum name="text" value="0"/>
+            <enum name="integer" value="1"/>
+        </attr>
+
+        <!-- only use maxInteger && minInteger if inputType="integer"-->
+        <attr name="maxInteger" format="integer"/>
+        <attr name="minInteger" format="integer"/>
+
+    </declare-styleable>
+</resources>

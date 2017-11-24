@@ -1,6 +1,8 @@
 package com.hilfritz.android.clean.ui.list
 
+import android.os.Build
 import android.os.Bundle
+import android.support.annotation.RequiresApi
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -21,9 +23,11 @@ class ListActivityFragment : BaseFragment() {
         return inflater.inflate(R.layout.fragment_list, container, false)
     }
 
+    @RequiresApi(Build.VERSION_CODES.M)
     override fun onViewCreated(view: View?, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         text!!.setText("halu there")
+        var context2 = context
     }
 
 
